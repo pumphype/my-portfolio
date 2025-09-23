@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walid Marhoum - Développeur Web & Mobile</title>
+    <meta name="description" content="Développeur Web & Mobile Full Stack - Jeune diplômé de l'ENSET Mohammedia">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body class="bg-animated">
+    <div id="particles-js"></div>
+    <div id="mouse-trail"></div>
+    
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Chargement du Portfolio...</p>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Walid Marhoum</h1>
+            <nav>
+                <a href="#hero" class="nav-link">Accueil</a>
+                <a href="#about" class="nav-link">À Propos</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#formation" class="nav-link">Formation</a>
+                <a href="#experience" class="nav-link">Expérience</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="profile-pic"></div>
+                <h1 class="hero-name" id="my-name">Walid Marhoum</h1>
+                <p class="hero-title" id="typewriter"></p>
+                <div class="hero-buttons">
+                    <a href="https://walidmarhoumprojets.carrd.co" target="_blank" class="btn btn-primary">Voir Mes Projets</a>
+                    <a href="https://walidmarhoum.carrd.co" target="_blank" class="btn btn-secondary">Télécharger CV</a>
+                </div>
+                <div class="scroll-indicator">
+                    <p>Défiler vers le bas</p>
+                    <i class="fas fa-chevron-down animated-arrow"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-content">
+                <h2>À Propos de Moi</h2>
+                <p>Je suis un jeune diplômé de l'École Nationale Supérieure de l'Enseignement Technique (ENSET) de Mohammedia, spécialisé en Développement Web et Mobile. Doté de solides compétences techniques et passionné par l'innovation, je suis à la recherche d'opportunités professionnelles dans le domaine du développement logiciel.</p>
+                <p>Mon objectif est d'intégrer une entreprise dynamique où je pourrais contribuer à des projets ambitieux tout en continuant à développer mon expertise. Je suis particulièrement intéressé par les offres d'emploi en développement web, mobile ou full-stack, et je suis ouvert aux défis techniques stimulants.</p>
+                
+                <div class="about-grid">
+                    <div class="about-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Diplômé ENSET</h3>
+                        <p>Développement Web & Mobile</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Full Stack</h3>
+                        <p>Frontend & Backend</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-language"></i>
+                        <h3>Multilingue</h3>
+                        <p>Français, Anglais B2, Espagnol</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-content">
+                <h2>Compétences Techniques</h2>
+                <div class="skills-grid">
+                    <div class="skill-card" data-skill="html">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <div class="skill-card" data-skill="css">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-card" data-skill="js">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <div class="skill-card" data-skill="react">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-card" data-skill="php">
+                        <i class="fab fa-php"></i>
+                        <span>PHP</span>
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <div class="skill-card" data-skill="node">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <div class="skill-card" data-skill="java">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-card" data-skill="database">
+                        <i class="fas fa-database"></i>
+                        <span>MySQL/MongoDB</span>
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 3rem;">Soft Skills</h3>
+                <div class="soft-skills">
+                    <span class="soft-skill-tag">Adaptabilité</span>
+                    <span class="soft-skill-tag">Esprit d'équipe</span>
+                    <span class="soft-skill-tag">Rigueur</span>
+                    <span class="soft-skill-tag">Autonomie</span>
+                    <span class="soft-skill-tag">Force de proposition</span>
+                    <span class="soft-skill-tag">Gestion de projet</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="formation">
+            <div class="section-content">
+                <h2>Parcours de Formation</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - 2025</div>
+                        <div class="timeline-content">
+                            <h3>Diplôme d'anglais niveau B2</h3>
+                            <span class="company">Niveau intermédiaire supérieur</span>
+                            <p>Communication aisée à l'oral et à l'écrit dans des contextes professionnels et académiques</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - 2025</div>
+                        <div class="timeline-content">
+                            <h3>École Nationale Supérieure d'Électronique et de Télécommunications (ENSET)</h3>
+                            <span class="company">Mohammedia</span>
+                            <p>Troisième année en Développement Web et Mobile - Technologies apprises : HTML/CSS, JavaScript, PHP/MySQL, SQL, Java</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>Formation dans la Bourse de Casablanca</h3>
+                            <span class="company">Casablanca</span>
+                            <p>Formation spécialisée en environnement financier</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>Diplôme de Technicien Spécialisé</h3>
+                            <span class="company">IGIC, Mohammedia</span>
+                            <p>Développement des Technologies de l'Information</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date"> .. -2021</div>
+                        <div class="timeline-content">
+                            <h3>Baccalauréat scientifique</h3>
+                            <span class="company">Option physique chimie</span>
+                            <p>Diplôme de fin d'études secondaires</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="section-content">
+                <h2>Expérience Professionnelle</h2>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="exp-date">Mars 2025 - Juillet 2025</div>
+                        <h3>Développeur Web & Mobile</h3>
+                        <span class="company">En recherche d'emploi (ouvert à l'international)</span>
+                        <p>Prêt à relever de nouveaux défis techniques et professionnels</p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="exp-date">Mai 2024 - Juillet 2024</div>
+                        <h3>Développeur Full Stack Junior</h3>
+                        <span class="company">Projet de fin d'étude</span>
+                        <p>Réalisation d'un projet concret : développement d'un site e-commerce dynamique (HTML, CSS, JavaScript, PHP, MySQL) avec gestion des produits, commandes et interface client</p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="exp-date">Mai 2023 - Juillet 2023</div>
+                        <h3>Développeur d'Application de Gestion</h3>
+                        <span class="company">Stage - Commerçant, Mohammedia</span>
+                        <p>Développement d'une application de gestion de stock (JS/PHP/MySQL) avec CRUD complet, recherche dynamique et interface responsive</p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="exp-date">Juin 2023 - Août 2023</div>
+                        <h3>Développeur Application Web</h3>
+                        <span class="company">S2A Industrie, Mohammedia</span>
+                        <p>Développement d'une solution web (HTML/CSS/JS/Node.js/MongoDB) pour application de gestion de maintenance industrielle</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-content">
+                <h2>Mes Projets Réalisés</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('./projects/ecommerce-screenshot.png.png');">
+                            <div class="project-overlay">
+                                <h3>Site E-commerce</h3>
+                                <p>HTML, CSS, JS, PHP, MySQL</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Plateforme E-commerce Dynamique</h3>
+                            <p>Application complète de commerce électronique avec gestion des produits, panier, commandes et interface d'administration</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://walidmarhoumprojets.carrd.co" target="_blank" class="project-details-btn">
+                                    <i class="fas fa-search"></i>
+                                    Voir les détails du projet
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('./projects/stock-management-screenshot.png.png');">
+                            <div class="project-overlay">
+                                <h3>Gestion de Stock</h3>
+                                <p>JS, PHP, MySQL</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Application de Gestion de Stock</h3>
+                            <p>Système complet de gestion d'inventaire avec CRUD, recherche dynamique et interface responsive</p>
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://walidmarhoumprojets.carrd.co" target="_blank" class="project-details-btn">
+                                    <i class="fas fa-search"></i>
+                                    Voir les détails du projet
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('./projects/maintenance-app-screenshot.png.png');">
+                            <div class="project-overlay">
+                                <h3>Maintenance Industrielle</h3>
+                                <p>Node.js, MongoDB</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Application de Gestion de Maintenance</h3>
+                            <p>Solution web pour suivre les interventions techniques, gérer le parc matériel et planifier les maintenances</p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>Express</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://walidmarhoumprojets.carrd.co" target="_blank" class="project-details-btn">
+                                    <i class="fas fa-search"></i>
+                                    Voir les détails du projet
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projects-cta">
+                    <a href="https://walidmarhoumprojets.carrd.co" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i>
+                        Voir Tous Mes Projets
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-content">
+                <h2>Contactez-moi</h2>
+                <p class="contact-subtitle">Je suis ouvert aux opportunités de collaboration et aux offres d'emploi</p>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:walidmarhoum7@gmail.com">walidmarhoum7@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Téléphone</h3>
+                                <a href="tel:+212679719409">+212 679 719 409</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Adresse</h3>
+                                <p>Place Hassan 2 N°2, Bni Yakhlef, Mohammedia, Maroc</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <div>
+                                <h3>Date de naissance</h3>
+                                <p>12 mars 2005</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-action">
+                        <h3>Disponible immédiatement</h3>
+                        <p>Je suis prêt à rejoindre votre équipe et à contribuer à vos projets ambitieux</p>
+                        <div class="contact-buttons">
+                            <a href="mailto:walidmarhoum7@gmail.com" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                Envoyer un Email
+                            </a>
+                            <a href="https://walidmarhoum.carrd.co" target="_blank" class="btn btn-secondary">
+                                <i class="fas fa-download"></i>
+                                Télécharger CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-section">
+                    <h3>Suivez-moi sur les réseaux</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/marhoum-walid-527ab2318" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="https://www.instagram.com/waal6id" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Walid Marhoum</h3>
+                <p>Développeur Web & Mobile Full Stack</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/marhoum-walid-527ab2318" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/waal6id" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:walidmarhoum7@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2024 Walid Marhoum. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
