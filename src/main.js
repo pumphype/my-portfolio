@@ -104,16 +104,20 @@ function initializeSmoothScrolling() {
     });
 }
 
-// Typewriter Effect
+// Typewriter Effect - Unique Version
 function initializeTypewriter() {
     const typewriterElement = document.getElementById('typewriter');
-    const texts = ['Développeur Web & Mobile', 'Full Stack Developer', 'Software Engineer'];
+    const texts = ['Digital Marketer', 'Full Stack Developer', 'Trader'];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
     
+    // Add cursor effect
+    typewriterElement.style.display = 'inline-block';
+    
     function typeWriter() {
         const currentText = texts[textIndex];
+        
         if (isDeleting) {
             typewriterElement.textContent = currentText.substring(0, charIndex - 1);
             charIndex--;
@@ -122,21 +126,30 @@ function initializeTypewriter() {
             charIndex++;
         }
         
-        if (!isDeleting && charIndex === currentText.length) {
+        // Add glitch effect when changing text
+        if (charIndex === currentText.length && !isDeleting) {
+            // Glitch effect
+            typewriterElement.style.animation = 'glitch 0.3s ease-in-out';
+            setTimeout(() => {
+                typewriterElement.style.animation = '';
+            }, 300);
             isDeleting = true;
             setTimeout(typeWriter, 2000);
-        } else if (isDeleting && charIndex === 0) {
+        } 
+        else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             textIndex = (textIndex + 1) % texts.length;
-            setTimeout(typeWriter, 500);
-        } else {
-            setTimeout(typeWriter, isDeleting ? 50 : 100);
+            setTimeout(typeWriter, 300);
+        } 
+        else {
+            const speed = isDeleting ? 60 : 120;
+            setTimeout(typeWriter, speed);
         }
     }
     
-    // Start typewriter after a delay
-    setTimeout(typeWriter, 1000);
+    setTimeout(typeWriter, 500);
 }
+
 
 // Contact Form
 function initializeContactForm() {
@@ -341,3 +354,32 @@ const notificationStyles = `
 const styleSheet = document.createElement('style');
 styleSheet.textContent = notificationStyles;
 document.head.appendChild(styleSheet);
+// Mobile menu toggle
+const menuBtn = document.getElementById('menuBtn');
+const mainNav = document.getElementById('mainNav');
+
+if (menuBtn) {
+    menuBtn.addEventListener('click', () => {
+        mainNav.classList.toggle('show');
+        const icon = menuBtn.querySelector('i');
+        if (icon.classList.contains('fa-bars')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+}
+
+// Close menu when clicking a link
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        mainNav.classList.remove('show');
+        if (menuBtn) {
+            const icon = menuBtn.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+});
